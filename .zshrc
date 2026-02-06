@@ -17,6 +17,10 @@ compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
+
 # Navigation
 setopt AUTO_CD
 setopt AUTO_PUSHD
@@ -70,6 +74,7 @@ alias rmf='/bin/rm'
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:/opt/nvim/"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
