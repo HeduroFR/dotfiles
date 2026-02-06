@@ -3,8 +3,14 @@
 Mes configurations pour un environnement de dev optimal sur Pop!_OS/Ubuntu.
 
 ## 🚀 Quick Install
+Pop!_OS:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/HeduroFR/dotfiles/main/install.sh) --full
+```
+
+Debian/Ubuntu:
+```bash
+bash <(curl -s https://raw.githubusercontent.com/HeduroFR/dotfiles/main/install-debian.sh) --full
 ```
 
 ## 📦 Stack
