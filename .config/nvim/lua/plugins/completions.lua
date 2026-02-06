@@ -6,15 +6,18 @@ return {
     "github/copilot.vim",
   },
   {
-		"L3MON4D3/LuaSnip",
-		dependencies = {
-			"saadparwaiz1/cmp_luasnip",
-			"rafamadriz/friendly-snippets",
-		},
-	},
-	{
 		"hrsh7th/nvim-cmp",
-		config = function()
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",     -- LSP source
+      "hrsh7th/cmp-buffer",       -- Buffer source
+      "hrsh7th/cmp-path",         -- Path source
+      "hrsh7th/cmp-cmdline",      -- Cmdline source
+      "saadparwaiz1/cmp_luasnip", -- Snippet source
+      "L3MON4D3/LuaSnip",         -- Snippet engine
+      "rafamadriz/friendly-snippets", -- Snippets prédéfinis
+      "onsails/lspkind.nvim",
+    },
+    config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
 
