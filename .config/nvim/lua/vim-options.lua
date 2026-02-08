@@ -7,11 +7,6 @@ vim.g.background = "dark"
 
 vim.opt.swapfile = false
 
--- Disable tags and use LSP for navigation instead
-vim.opt.tags = ""
-vim.opt.tagfunc = "v:lua.vim.lsp.tagfunc"
-vim.keymap.set('n', '<C-]>', vim.lsp.buf.definition, { desc = "Go to definition (LSP)" })
-
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
