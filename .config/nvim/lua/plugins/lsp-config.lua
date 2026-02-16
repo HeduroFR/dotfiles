@@ -23,7 +23,10 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.tsserver.setup({
+			lspconfig.prismals.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			  settings = {
           typescript = {
